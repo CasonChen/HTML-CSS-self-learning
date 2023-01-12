@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        AUDIO_VIDEO
+    </title>
+</head>
+
+<body>
+    <!--
+        <audio>标签:用来向页面中引入一个外部的音频文件
+            音视频文件引入时，默认情况下不允许用户自己控制播放停止
+                controls 这个是可以实现允许用户自主控制播放
+                autoplay 音频文件是否自动播放
+                    如果设置了autoplay，则音乐会在打开页面的时候自动播放
+                        但是目前来讲大部分浏览器都不会自动对音乐播放
+                loop 设置音频在播放完之后回到开头继续播放
+    -->
+    <audio src="./source/audio.mp3" controls></audio>
+    <br><br>
+    <!-- 除了通过src来指定外部文件的路径之外，还可以通过source来指定文件 -->
+    <audio controls>
+        对不起，您的浏览器不支持播放音频，请升级浏览器！
+        <!-- 上述文字是针对那些不支持audio标签的浏览器看的。那些浏览器会自动忽略audio的标签，但是文字却不会忽视 -->
+        <source src="./source/audio.mp3">
+        <source src="./source/audio.ogg">
+        <!-- ogg格式是为了给那些不支持mp3音频格式的浏览器所使用的 -->
+        <!-- 浏览器会自动进行选择mp3或者ogg进行播放 -->
+        <embed src="./source/audio.mp3" type="audio/mp3" width="300">
+        <!-- <embed>标签是针对于老款IE浏览器所使用，他们无法使用<audio>标签 -->
+        <!-- 上面三个播放音频的标签，浏览器会自动从第一个开始走，如果第一个可以用，后面的就不会走了 -->
+    </audio>
+    <!-- 上述两种audio的效果是一样的 -->
+    <!-- 使用<video>标签来向网页中引入一个视频 -->
+    <!-- 其使用方式基本与audio一致 -->
+    <br><br>
+    <video src=""></video>
+    <video controls>
+        <source src="./source/flower.webm">
+        <source src="./source/flower.mp4">
+        <embed src="./source/flower.mp4" type="video/mp4">
+    </video>
+    <!-- 通过iframe引入外部视频链接(大多数视频网站是可以直接复制代码的) -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/o6-P0Ru-jsM" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+    </iframe>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        ENTITY_CLASS
+    </title>
+</head>
+
+<body>
+    <p>
+        the <font color="blue">weather</font>
+        <i>today</i> is <b>pretty</b> good
+    </p>
+    <p>
+        <u>the</u> head
+        <!-- 在网页编写中的多个空格默认情况下会被自动识别成一个空格 -->
+        <!-- 在HTML中有些时候，不能直接书写一些特殊符号 -->
+        <!-- 比如，多个连续的空格；字母两侧的大于小于号 -->
+        <!-- 如果需要书写这些符号，就需要用到转义符号 -->
+        <!-- 实体的语法
+                &实体名字;
+                such as:&nbsp;
+                    ";"<-don't forget this symbol -->
+        <!-- 还有常用的几个转义符，如下所示 -->
+        <!--
+            &gt;大于号
+            &lt;小于号
+            &copy;版权符号
+         -->
+    </p>
+    <p>
+        今&nbsp;&nbsp;天&nbsp;&nbsp;&nbsp;天&nbsp;&nbsp;&nbsp;&nbsp;气
+    </p>
+    <hr>
+    <p>
+        a&gt;<font color="grey">b</font>&lt;c
+    </p>
+    <hr>
+    <p>
+        商标&copy;
+    </p>
+    <p>
+        a&#768;
+    </p>
+
+</body>
+
+</html>

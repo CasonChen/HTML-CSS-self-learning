@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB</title>
+    <style>
+        .box1 {
+            width: 100px;
+            height: 100px;
+            /*
+            颜色单位
+                在CSS中可以直接使用颜色名来设置各种颜色
+
+            RGB值
+                -RGB通过三种颜色的不同浓度来调配出不同的颜色
+                -R：red|G：green|B：blue
+                -每一种颜色的范围都是在0~255之间
+            */
+            background-color: rgb(205, 225, 202);
+        }
+
+        .box2 {
+            /* rgba就是在rgb的基础上加了个a，是表示不透明度 */
+            /* 需要四个值，前三个和rgb一样，需要第四个值 */
+            /* 1表示完全不透明，0表示完全透明，同理所得，.5表示半透明 */
+            width: 100px;
+            height: 100px;
+            background-color: rgba(225, 202, 90, .7);
+        }
+
+        .box3 {
+            /*
+            十六进制rgb值
+                -语法：#红绿蓝
+                -颜色浓度通过00-ff表示
+                -如果颜色两位两位重复可以进行简写
+            */
+            width: 100px;
+            height: 100px;
+            background-color: #548B54;
+        }
+
+        .box4 {
+            /* HSL值和HSLA */
+            /*
+            和上面一样，A还是表示透明度
+            H-hue-色相
+            S-saturation-饱和度
+            L-lightness-亮度
+            S和L的数值后面要带%
+            */
+            width: 100px;
+            height: 100px;
+            background-color: hsl(323, 66%, 68%);
+        }
+
+        .box5 {
+            width: 100px;
+            height: 100px;
+            background-color: hsla(101, 66%, 68%, 1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    <div class="box3">box3</div>
+    <div class="box4">box4</div>
+    <div class="box5">box5</div>
+</body>
+
+</html>
