@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MARGIN</title>
+    <style>
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+            border: 5px orange solid;
+            /*
+            margin，外边距
+                -外边距不会影响盒子可见框的大小
+                -但是外边距会影响盒子的位置
+                -一共有四个方向的外边距：
+                    margin-top
+                        上外边距，设置一个正值，元素会向下移动；同理，负值就会往反方向移动
+                    margin-right
+                        左外边距，设置一个正值，元素会向右移动；同理，负值就会往反方向移动
+                    margin-bottom
+                        下外边距，设置一个正值，其下边的元素会向下移动；同理，负值就会往反方向移动
+                    margin-left
+                        左外边距，设置一个正值，元素会向右移动；同理，负值就会往反方向移动
+                -元素在页面中是按照自左向右的顺序排列的
+                    故默认情况下，如果我们设置的左和上外边距则会移动元素自身
+                    而设置下和右边距会移动其他元素
+            */
+            margin-top: 100px;
+            margin-left: 100px;
+            margin-right: 100px;
+            margin-bottom: 100px;
+            /*box1和box2中间的空白处就是这个margin-bottom的作用*/
+
+        }
+
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+            border: 5px orange solid;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">this is box1</div>
+    <div class="box2">this is box2</div>
+</body>
+
+</html>

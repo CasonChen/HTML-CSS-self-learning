@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>PADDING</title>
+    <style>
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+            border: 10px orangered solid;
+            padding-top: 100px;
+            padding-right: 100px;
+            padding-bottom: 100px;
+            padding-left: 100px;
+        }
+
+        /*
+        padding，也就是内边距
+            -内容区和边框之间的距离是内边距
+            -共有四个方向的内边距
+                padding-top
+                padding-right
+                padding-bottom
+                padding-left
+
+            -内边距的设置会影响到盒子的大小
+            -背景颜色默认会延伸到内边距上
+            -一个盒子的可见框大小，由内容区、内边距和边框共同决定
+                所以在计算盒子大小时，需要降这三个区域加到一起计算
+                    目前这个盒子的大小计算：
+                        border-left=10px
+                        .box1-width=200px
+                        .inner-width=200px
+                        border-right=10px
+                        所以可以计算出，总的距离是420px
+        */
+        .inner {
+            width: 100%;
+            height: 100%;
+            background-color: yellow;
+        }
+
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background-color: violet;
+            border: 5px skyblue solid;
+            padding: 10px 20px 30px 40px
+        }
+
+        .inner_2 {
+            width: 100%;
+            height: 100%;
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">this is box1
+        <div class="inner">this is inner</div>
+    </div>
+    <div class="box2">box2
+        <div class="inner_2">inner_2</div>
+    </div>
+</body>
+
+</html>

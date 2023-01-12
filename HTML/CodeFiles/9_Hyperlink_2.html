@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>HYPERLINK_2</title>
+</head>
+
+<body>
+    <a href="./Hyperlink.html">HyperlinkTest</a>
+    <!--
+        target属性：用于指定超链接打开的位置
+            可选值：
+                _self 默认值 在当前页面中打开超链接
+                _blank 在一个新的页面中打开
+    -->
+    <br>
+    <a href="https://www.google.com" target="_blank">Google</a>
+    <br>
+    <!--
+        对于设计去底部这个功能，引入以下内容：
+        id属性（唯一不重复）
+            每一个标签都可以添加一个id属性，这个id属性就是元素的唯一标识
+        同一个页面中不能出现重复的id属性
+    -->
+    <a href="#bottom">Go to Buttom</a>
+    <br>
+    <!-- 在写一个新的超链接跳转时，我们可以"javascript:;"先用占个位置，做占位符 -->
+    <a href="javascript:;">Occupied</a>
+    <br>
+    <a href="#TestPot">Go to TestPot</a>
+    <!-- 跳转到页面的指定位置，只需将href属性设置 #目标元素的id属性值 -->
+    <p>
+        <font color="blue">The saying "The real danger is not that the computer will begin to think like man, but that
+            man will begin to think like
+            the computer" raises an important point about the potential risks of our reliance on technology. As
+            computers become
+            more advanced, there is a risk that humans may become too reliant on them and lose the ability to think and
+            make
+            decisions for themselves. This could lead to a situation where humans become passive consumers of
+            information and
+            decisions made by computers, rather than actively engaging in the process of analysis and decision-making.
+            On the other
+            hand, if humans begin to think like computers, they may become more efficient and productive, but they may
+            also lose
+            some of their creativity and flexibility. Thinking like a computer involves following predetermined rules
+            and
+            procedures, rather than considering alternative perspectives and approaches. This could lead to a
+            narrow-minded and
+            inflexible way of thinking that is not well-suited to the complex and dynamic world we live in. It is
+            important for
+            humans to maintain their own critical thinking skills and not become overly reliant on technology to make
+            decisions for
+            them.The saying "The real danger is not that the computer will begin to think like man, but that man will
+            begin to think like
+            the computer" raises an important point about the potential risks of our reliance on technology. As
+            computers become
+            more advanced, there is a risk that humans may become too reliant on them and lose the ability to think and
+            make
+            decisions for themselves. This could lead to a situation where humans become passive consumers of
+            information and
+            decisions made by computers, rather than actively engaging in the process of analysis and decision-making.
+            On the other
+            hand, if humans begin to think like computers, they may become more efficient and productive, but they may
+            also lose
+            some of their creativity and flexibility. Thinking like a computer involves following predetermined rules
+            and
+            procedures, rather than considering alternative perspectives and approaches. This could lead to a
+            narrow-minded and
+            inflexible way of thinking that is not well-suited to the complex and dynamic world we live in. It is
+            important for
+            humans to maintain their own critical thinking skills and not become overly reliant on technology to make
+            decisions for
+            them.The saying "The real danger is not that the computer will begin to think like man, but that man will
+            begin to think like
+            the computer" raises an important point about the potential risks of our reliance on technology. As
+            computers become
+            more advanced, there is a risk that humans may become too reliant on them and lose the ability to think and
+            make
+            decisions for themselves. This could lead to a situation where humans become passive consumers of
+            information and
+            decisions made by computers, rather than actively engaging in the process of analysis and decision-making.
+            On the other
+            hand, if humans begin to think like computers, they may become more efficient and productive, but they may
+            also lose
+            some of their creativity and flexibility. Thinking like a computer involves following predetermined rules
+            and
+            procedures, rather than considering alternative perspectives and approaches. This could lead to a
+            narrow-minded and
+            inflexible way of thinking that is not well-suited to the complex and dynamic world we live in. It is
+            important for
+            humans to maintain their own critical thinking skills and not become overly reliant on technology to make
+            decisions for
+            them.The saying "The real danger is not that the computer will begin to think like man, but that man will
+            begin to think like
+            the computer" raises an important point about the potential risks of our reliance on technology. As
+            computers become
+            more advanced, there is a risk that humans may become too reliant on them and lose the ability to think and
+            make
+            decisions for themselves. This could lead to a situation where humans become passive consumers of
+            information and
+            decisions made by computers, rather than actively engaging in the process of analysis and decision-making.
+            On the other
+            hand, if humans begin to think like computers, they may become more efficient and productive, but they may
+            also lose
+            some of their creativity and flexibility. Thinking like a computer involves following predetermined rules
+            and
+            procedures, rather than considering alternative perspectives and approaches. This could lead to a
+            narrow-minded and
+            inflexible way of thinking that is not well-suited to the complex and dynamic world we live in. It is
+            important for
+            humans to maintain their own critical thinking skills and not become overly reliant on technology to make
+            decisions for
+            them.</font>
+    </p>
+    <p id="TestPot">
+        <font color="purple">This is TestPot</font>
+    </p>
+
+    <!--
+        如何实现点击回到顶部可以返回到网页顶部？
+        可以通过将超链接的href属性设置为#
+            这样点击之后，页面不会发生跳转，而是转到当前页面的顶部位置
+    -->
+    <a id="bottom" href="">Go to Top</a>
+</body>
+
+</html>

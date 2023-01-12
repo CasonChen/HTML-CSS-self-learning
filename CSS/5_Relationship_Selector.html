@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>RELATIONSHIP_SELECTOR</title>
+    <style>
+        /* 为div的子元素span设置一个字体颜色红色 */
+        /*
+            子元素选择器
+                作用：指定选中父元素的指定元素
+                语法：父元素 > 子元素
+        */
+        div.Father>span {
+            color: red;
+        }
+
+        /*
+            后代元素选择器
+                作用：选中指定元素内的指定后代元素
+                语法：祖先 后代
+        */
+        div span {
+            color: blue;
+        }
+
+        /*
+            选择下一个兄弟
+                语法：前一个+下一个
+                注意：所选择的这两个必须要在一块，才能满足条件
+            选择下边所有的兄弟
+                语法：兄~弟
+        */
+        p+span {
+            background-color: violet;
+        }
+
+        /* 目前不显示，因为上面Father已经作用在span身上了 */
+        p~span {
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--
+        父元素
+            -直接包含子元素的元素叫做父元素
+        子元素
+            -直接被父元素包含的元素是子元素
+        祖先元素
+            -直接或间接包含后代元素的元素叫做祖先元素
+            -一个元素的父元素也是它的祖先元素
+        后代元素
+            -直接或间接被祖先元素包含的元素叫做后代元素
+            -子元素也是后代元素
+        兄弟元素
+            -拥有相同父元素的元素叫兄弟元素
+    -->
+    <div class="Father">
+        This is div
+        <p>
+            This is element p in div
+            <br>
+            <span>
+                this is element span in p
+                <br>
+            </span>
+        </p>
+        <span>
+            this is element span in div
+            <br>
+        </span>
+        <span>
+            this is element span in div
+            <br>
+        </span>
+        <span>
+            this is element span in div
+            <br>
+        </span>
+        <span>
+            this is element span in div
+            <br>
+        </span>
+    </div>
+    <div>element
+        <br>
+        <span>This is a span out of div but another div</span>
+    </div>
+</body>
+
+</html>
