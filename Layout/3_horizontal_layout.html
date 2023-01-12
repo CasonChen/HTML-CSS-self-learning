@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>HORIZONTAL_LAYOUT</title>
+    <style>
+        .outer {
+            width: 800px;
+            height: 200px;
+            border: 5px orange dashed;
+        }
+
+        .inner {
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+            /*
+        元素的水平方向的布局
+            元素在其父元素中水平方向的位置由以下几个属性共同决定：
+                margin-left
+                border-left
+                padding-left
+                width
+                padding-right
+                border-right
+                margin-right
+            一个元素在其父元素中，水平布局还必须要满足以下等式：
+                margin-left+border-left+padding-left+width+padding-right+border-right+margin-right
+                上述等式的和是等于其父元素内容区的高度
+                以该style为例，上面这个等式就是：0+0+0+200+0+0+0=800
+                    上面这个式子，傻子都能看出来不成立
+                        上面这个情况，我们称之为"过度约束"
+                        等式会自动调整margin-right的值以保证等式满足
+                上面七个值中，有三个值可以设置为auto
+                    width
+                    margin-left
+                    margin-right
+                    如果某个值为auto，则会自动设置为auto的那个值来保证等式成立
+                -如果将一个宽度和一个外边距设置为auto，则宽度会调整到最大，设置为auto的外边距会自动为0
+                -如果三个值都设置为auto，则外边距都是0，宽度为最大值
+                -如果将两个外边距设置为auto，宽度固定值，则会将外边距设置为相同的值
+                    所以我们经常利用这个特点来使一个元素在其父元素中水平居中
+        */
+        }
+
+        .example {
+            width: 400px;
+            height: 400px;
+            border: 5px skyblue dotted;
+        }
+
+        .example_inner {
+            width: 200px;
+            height: 200px;
+            margin: 100px auto;
+            background-color: #bfa;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer">
+        <div class="inner"></div>
+    </div>
+    <div class="example">
+        <div class="example_inner"></div>
+    </div>
+</body>
+
+</html>
