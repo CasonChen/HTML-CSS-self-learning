@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        FOLDING OF OUTER MARGINS
+    </title>
+    <style>
+        .box1,
+        .box2 {
+            width: 200px;
+            height: 200px;
+        }
+
+        .box1 {
+            background-color: orange;
+            margin-bottom: 100px;
+        }
+
+        .box2 {
+            background-color: #bfa;
+            /* 设置一个上外边距 */
+            margin-top: 100px;
+            /*
+            上面这个margin-top为什么没效果呢，这种情况称之为：外边距的折叠
+                相邻的垂直方向外边距会发生重叠现象
+                分两种情况：
+                    1.兄弟元素
+                        兄弟元素间的相邻垂直外边距会取两者之间的较大值（两者都是正值）
+                        特殊情况：
+                            1.如果相邻的外边距一正一负，则取两者的和
+                            2.如果相邻的外边距都是负值，则取两者中绝对值较大的
+                        兄弟元素之间的外边距的重叠，对于开发是有利的，所以我们不需要进行处理
+            */
+        }
+
+        .box3 {
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+        }
+
+        /*
+                    2.父子元素
+                        父子元素间相邻外边距，子元素的会传递给父元素（上外边距）
+                        所以父子外边距的折叠会影响到页面的布局，必须要进行处理
+*/
+        .box4 {
+            width: 100px;
+            height: 100px;
+            background-color: turquoise;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    <br><br><br>
+    <div class="box3">
+        <div class="box4">box4</div>
+    </div>
+</body>
+
+</html>
