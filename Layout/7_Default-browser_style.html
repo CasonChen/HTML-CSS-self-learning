@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Default browser style</title>
+    <style>
+        .box1 {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            /*
+            在运行之后，可以发现，.box1的四周会有一小段距离
+                这种情况叫做“默认样式”
+                    通常情况下，浏览器都会元素设置一些默认样式
+                    默认样式的存在会影响到页面的布局，通常情况下编写网页时需要去除浏览器的默认样式（PC端的页面） 
+            */
+        }
+
+        /*
+        body {
+            margin: 0;
+            删除掉body自带的margin的8px距离
+        }
+
+        p {
+            margin: 0;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        */
+        /* 更快捷的去掉浏览器默认样式的方法 */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <p>我是一个段落</p>
+    <p>我是一个段落</p>
+    <p>我是一个段落</p>
+    <p>我是一个段落</p>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+</body>
+
+</html>
