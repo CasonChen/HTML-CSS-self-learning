@@ -1,0 +1,30 @@
+body {
+    background-color: #e3e4e5;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.navigation_bar {
+    width: 190px;
+    height: 450px;
+    background-color: #f4f4f4;
+    margin: 10px 0 0 10px;
+    padding: 10px 0 10px 0
+}
+
+.items {
+    width: 172px;
+    height: 25px;
+    padding: 0 0 0 18px;
+    font-size: 14px;
+    line-height: 25px;
+    color: #333333;
+}
+
+.separate {
+    font-size: 12px;
+    color: #636363;
+}
