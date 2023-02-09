@@ -1,0 +1,46 @@
+<!-- 仿造京东网站的右侧商品图片列表 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>List of picture</title>
+    <style>
+        .list {
+            width: 190px;
+            height: 470px;
+            padding: 10px;
+            background-color: #f4f4f4;
+        }
+
+        .picture_1 {
+            width: 190px;
+            height: 150px;
+            display: block
+        }
+
+        .picture_2 {
+            width: 190px;
+            height: 150px;
+            margin-top: 10px;
+            display: block
+        }
+
+        .picture_3 {
+            width: 190px;
+            height: 150px;
+            margin-top: 10px;
+            display: block
+        }
+    </style>
+</head>
+
+<body>
+    <div class="list">
+        <div class="picture_1"><img src="./picture_1.jpg" alt="picture_1"></div>
+        <div class="picture_2"><img src="./picture_2.jpg" alt="picture_2"></div>
+        <div class="picture_3"><img src="./picture_3.jpg" alt="picture_3"></div>
+    </div>
+</body>
+
+</html>
