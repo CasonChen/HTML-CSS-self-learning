@@ -5,42 +5,27 @@
 <head>
     <meta charset="UTF-8">
     <title>List of picture</title>
+    <link rel="stylesheet" href="./reset.css">
     <style>
-        .list {
-            width: 190px;
-            height: 470px;
-            padding: 10px;
+        body {
             background-color: #f4f4f4;
         }
 
-        .picture_1 {
-            width: 190px;
-            height: 150px;
-            display: block
-        }
-
-        .picture_2 {
+        .picture {
             width: 190px;
             height: 150px;
             margin-top: 10px;
-            display: block
-        }
-
-        .picture_3 {
-            width: 190px;
-            height: 150px;
-            margin-top: 10px;
-            display: block
+            margin-left: 10px;
         }
     </style>
 </head>
 
 <body>
-    <div class="list">
-        <div class="picture_1"><img src="./picture_1.jpg" alt="picture_1"></div>
-        <div class="picture_2"><img src="./picture_2.jpg" alt="picture_2"></div>
-        <div class="picture_3"><img src="./picture_3.jpg" alt="picture_3"></div>
-    </div>
+    <ul>
+        <li class="picture"><a href="javascript"><img src="./picture_1.jpg" alt="picture_1"></a></li>
+        <li class="picture"><a href="javascript"><img src="./picture_2.jpg" alt="picture_2"></a></li>
+        <li class="picture"><a href="javascript"><img src="./picture_3.jpg" alt="picture_3"></a></li>
+    </ul>
 </body>
 
 </html>
