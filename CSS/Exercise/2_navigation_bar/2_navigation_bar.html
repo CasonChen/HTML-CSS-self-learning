@@ -4,23 +4,67 @@
 <head>
     <meta charset="UTF-8">
     <title>Navigation Bar</title>
+    <link rel="stylesheet" href="./reset.css">
     <style>
         body {
             background-color: #e3e4e5;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
         }
 
         .navigation_bar {
             width: 190px;
             height: 450px;
             background-color: #f4f4f4;
-            margin-top: 10px;
-            padding: 10px 0 10px 0;
+            margin: 10px 0 0 10px;
+            padding: 10px 0 10px 0
+        }
+
+        .items {
+            width: 172px;
+            height: 25px;
+            padding: 0 0 0 18px;
+            font-size: 14px;
+            line-height: 25px;
+        }
+
+        .separate {
+            font-size: 12px;
         }
     </style>
 </head>
 
 <body>
-    <div class="navigation_bar"></div>
+    <div class="navigation_bar">
+        <ul>
+            <li class="items"><a href="javascript">家用电器</a></li>
+            <li class="items"><a href="javascript">手机</a><span class="separate">/</span><a href="javascript">运营商</a>
+            </li>
+            <li class="items">
+                <a href="javascript">众筹</a><span class="separate">/</span><a href="javascript">白条</a><span
+                    class="separate">/</span><a href="javascript">保险</a><span class="separate">/</span><a
+                    href="javascript">企业金融</a>
+            </li>
+            <li class="items"></li>
+            <li class="items"></li>
+            <li class="items"></li>
+            <li class="items"></li>
+            <li class="items"></li>
+            <li class="items"></li>
+            <li class="items"></li>
+            <li class="items"></li>
+            <li class="items"></li>
+            <li class="items"></li>
+            <li class="items"></li>
+            <li class="items"></li>
+            <li class="items"></li>
+            <li class="items"></li>
+            <li class="items"></li>
+        </ul>
+    </div>
 </body>
 
 </html>
