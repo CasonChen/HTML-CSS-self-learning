@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Profile shading and rounded corners</title>
+    <style>
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+
+            outline: 10px violet solid;
+        }
+
+        /* 注意上下两者区别 */
+        /* 其用法与border一样 */
+        /* 不同点就是轮廓不会影响到可见框的大小 */
+
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+
+            border: 10px violet solid;
+        }
+
+        .box3 {
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+        }
+
+        .box3:hover {
+            outline: 10px yellowgreen dotted;
+        }
+
+        .box4 {
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+            /* box-shadow 用来设置元素的阴影效果，阴影不会影响页面布局 */
+            box-shadow: 10px 10px 10px violet;
+            /*
+            第一个10px是阴影左侧偏移量，就像margin-left一样
+                正值向右移动，负值向左移动
+            第二个10px是阴影下方偏移量，就像margin-bottom一样
+                正值向下移动，负值向上移动
+            第三个10px是阴影的模糊半径
+            */
+        }
+
+        .box5 {
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+            /* 圆角 */
+            border-radius: 60px / 80px;
+            /* 椭圆角 */
+            border-top-left-radius: 50px 20px;
+        }
+
+        .box6 {
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+            border-radius: 50%;
+            /* 不管width和height是多少，只要是50%，就会是个圆 */
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <!-- border与outline的区别 -->
+        <div class="box1"></div>
+        <span>hello</span>
+        <br><br><br><br>
+        <div class="box2"></div>
+        <span>hello</span>
+        <div class="box3"></div>
+        <span>hello</span>
+    </nav>
+    <br><br><br><br>
+    <nav>
+        <!-- 盒子阴影 -->
+        <div class="box4"></div>
+    </nav>
+    <br><br><br><br>
+
+    <nav>
+        <!-- 盒子圆角 -->
+        <div class="box5"></div>
+        <div class="box6"></div>
+    </nav>
+</body>
+
+</html>
