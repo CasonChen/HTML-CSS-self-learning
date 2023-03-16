@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Float Features</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+
+            float: left;
+            /* 浮动元素不会盖住文字，文字会自动环绕在浮动元素的周围
+                所以我们可以利用浮动来设置文字环绕图片的效果 */
+        }
+
+        .box2 {
+            background-color: yellowgreen;
+
+            float: left;
+            /* 设置完浮动之后宽度就不会被撑满了 */
+            /* 元素设置完浮动之后，将会从文档流中脱离，其元素的一些特点也会发生变化 */
+
+            /* 脱离文档流的特点：
+                块元素：
+                    1.块元素不再独占页面的一行；
+                    2.脱离文档流以后，块元素的宽度和高度会被其内容撑开 */
+        }
+
+        .box3 {
+            background-color: orangered;
+        }
+
+        .s1 {
+            background-color: skyblue;
+            float: left;
+            width: 200px;
+            height: 100px;
+            /* 行内元素脱离文档流之后会变成块元素，其性质将会变得与块元素一样 */
+            /* 脱离文档流之后，不需要再区分块元素或者行内元素 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sit consectetur impedit, unde quo nemo
+        perspiciatis eveniet, earum deleniti vitae fugiat similique, ad minima voluptas? Cumque voluptate aspernatur
+        expedita reprehenderit.</p>
+    <div class="box2">hello</div>
+    <div class="box3">world</div>
+    <span class="s1">this is a span</span>
+</body>
+
+</html>
