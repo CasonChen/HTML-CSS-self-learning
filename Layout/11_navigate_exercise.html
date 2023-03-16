@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/Reset stylesheet/reset.css">
+    <title>Navigate_exercise</title>
+    <style>
+        .nav {
+            /* 设置nav的大小 */
+            width: 1200px;
+            height: 48px;
+            /* 设置背景颜色 */
+            background-color: #e8e7e3;
+
+            margin: 12px auto;
+        }
+
+        .nav li {
+            /* 使菜单横向排列 */
+            float: left;
+            /* 设置li的高度 */
+            height: 100%;
+            /* line-height的作用是为了将元素的文字在父元素中居中 */
+            line-height: 48px;
+        }
+
+        /* 设置a的样式 */
+        .nav a {
+            /* 去除下划线 */
+            text-decoration: none;
+            color: #777777;
+            font-size: 18px;
+            /* 将a转换为块元素 */
+            display: block;
+
+            padding: 0 44px;
+        }
+
+        .nav a:hover {
+            /* 设置鼠标移入的效果 */
+            background-color: #3f3f3f;
+            color: #e8e7e3;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="nav">
+        <li>
+            <a href="#" title="HTML 系列教程">HTML/CSS</a>
+        </li>
+        <li>
+            <a href="#" title="浏览器脚本">Browser Side</a>
+        </li>
+        <li>
+            <a href="#" title="服务器脚本">Server Side</a>
+        </li>
+        <li>
+            <a href="#" title="编程教程">Programming</a>
+        </li>
+        <li>
+            <a href="#" title="XML系列教程">XML</a>
+        </li>
+        <li>
+            <a href="#" title="建站手册">Web Building</a>
+        </li>
+        <li>
+            <a href="#" title="参考手册">Reference</a>
+        </li>
+    </ul>
+</body>
+
+</html>
