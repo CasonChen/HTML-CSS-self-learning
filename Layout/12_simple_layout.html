@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simply Layout</title>
+    <style>
+        header,
+        main,
+        footer {
+            width: 910px;
+            margin: 0 auto;
+        }
+
+        header,
+        footer {
+            height: 150px;
+        }
+
+        /* 设置头部 */
+        header {
+            background-color: silver;
+        }
+
+        /* 设置主体 */
+        main {
+            height: 400px;
+            background-color: #bfa;
+            /* margin这个是为了让三个元素之间间隔开 */
+            margin: 100px auto;
+        }
+
+        /* 让main中的三个部分水平排列 */
+        nav,
+        article,
+        aside {
+            width: 210px;
+            height: inherit;
+            float: left;
+        }
+
+        /* 设置导航栏 */
+        nav {
+            background-color: yellowgreen;
+        }
+
+        /* 设置中间内容 */
+        article {
+            background-color: tomato;
+            /* 为了让三个部分能中间有缝 */
+            margin: 0 140px;
+        }
+
+        /* 设置右侧内容 */
+        aside {
+            background-color: skyblue;
+        }
+
+        /* 设置底部 */
+        footer {
+            background-color: violet;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 创建头部 -->
+    <header></header>
+
+    <!-- 创建主体 -->
+    <!-- 注意，一个网页只能有一个主体 -->
+    <main>
+        <!-- 左侧导航 -->
+        <nav></nav>
+
+        <!-- 中间内容 -->
+        <article></article>
+
+        <!-- 右侧边栏 -->
+        <aside></aside>
+    </main>
+
+    <!-- 创建底部 -->
+    <footer></footer>
+</body>
+
+</html>
